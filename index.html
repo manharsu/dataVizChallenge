@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.33">
+<meta name="generator" content="quarto-1.8.25">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -61,14 +61,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="index_files/libs/clipboard/clipboard.min.js"></script>
 <script src="index_files/libs/quarto-html/quarto.js" type="module"></script>
 <script src="index_files/libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="index_files/libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="index_files/libs/quarto-html/popper.min.js"></script>
 <script src="index_files/libs/quarto-html/tippy.umd.min.js"></script>
 <script src="index_files/libs/quarto-html/anchor.min.js"></script>
 <link href="index_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="index_files/libs/quarto-html/quarto-syntax-highlighting-ea385d0e468b0dd5ea5bf0780b1290d9.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="index_files/libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="index_files/libs/bootstrap/bootstrap.min.js"></script>
 <link href="index_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="index_files/libs/bootstrap/bootstrap-bb462d781dde1847d9e3ccf7736099dd.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="index_files/libs/bootstrap/bootstrap-9e3ffae467580fdb927a41352e75a2e0.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 
 
 </head>
@@ -107,7 +108,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-📊 Challenge Requirements
+<span class="screen-reader-only">Important</span>📊 Challenge Requirements
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -130,7 +131,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-⚠️ AI Partnership Required
+<span class="screen-reader-only">Warning</span>⚠️ AI Partnership Required
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -163,7 +164,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h2 class="anchored" data-anchor-id="data-loading-and-initial-exploration">Data Loading and Initial Exploration</h2>
 <p>Let’s start by loading the baseball data and understanding what we’re working with.</p>
 <div id="load-data" class="cell" data-message="false" data-execution_count="1">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span>
@@ -178,7 +179,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"2021 data shape:"</span>, df2021.shape)</span>
 <span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"</span><span class="ch">\n</span><span class="st">2010 data columns:"</span>, df2010.columns.tolist())</span>
 <span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"</span><span class="ch">\n</span><span class="st">First few rows of 2010 data:"</span>)</span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df2010.head())</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df2010.head())</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>2010 data shape: (2430, 7)
 2021 data shape: (2429, 7)
@@ -200,7 +201,7 @@ First few rows of 2010 data:
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-💡 Understanding the Data
+<span class="screen-reader-only">Note</span>💡 Understanding the Data
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -219,11 +220,43 @@ First few rows of 2010 data:
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-🤔 Discussion Questions: Stage 1 - Declaration of Purpose
+<span class="screen-reader-only">Important</span>🤔 Discussion Questions: Stage 1 - Declaration of Purpose
 </div>
 </div>
 <div class="callout-body-container callout-body">
 <p><strong>Question 1: Hypothesis Formation</strong> - Why might high altitude affect baseball performance? Is Coors Field affected by high altitude?</p>
+<p><strong>Answer:</strong></p>
+<p>High altitude significantly affects baseball performance due to the reduced air density at higher elevations. Coors Field, located in Denver, Colorado at 5,280 feet above sea level, is the highest ballpark in Major League Baseball and experiences pronounced effects from this altitude.</p>
+<p><strong>Primary Mechanisms of High Altitude Effects:</strong></p>
+<ol type="1">
+<li><strong>Reduced Air Density Impact on Batted Balls:</strong>
+<ul>
+<li>At 5,280 feet, the thinner air offers less resistance to batted balls</li>
+<li>Baseballs can travel approximately 9% farther than at sea level</li>
+<li>A 400-foot home run at sea level could extend to about 440 feet at Coors Field</li>
+<li>This creates more home runs and extra-base hits</li>
+</ul></li>
+<li><strong>Diminished Pitch Movement:</strong>
+<ul>
+<li>Breaking pitches (curveballs, sliders) experience less movement due to reduced air resistance</li>
+<li>Fastballs exhibit less “rise” due to decreased Magnus effect in thinner air</li>
+<li>Pitchers lose some of their ability to fool hitters with movement</li>
+</ul></li>
+<li><strong>Humidor Mitigation:</strong>
+<ul>
+<li>Coors Field implemented a humidor in 2002 to store baseballs at controlled humidity</li>
+<li>This reduces ball liveliness and helps balance the game dynamics</li>
+<li>The humidor partially counteracts the altitude effects</li>
+</ul></li>
+</ol>
+<p><strong>Hypothesis Formation:</strong></p>
+<p>Given these physical effects, we can form several testable hypotheses about Coors Field:</p>
+<ol type="1">
+<li><strong>Primary Hypothesis:</strong> Coors Field will have higher average runs per game compared to sea-level stadiums due to increased offensive production</li>
+<li><strong>Secondary Hypothesis:</strong> Coors Field will have higher home run rates per game compared to other stadiums</li>
+<li><strong>Tertiary Hypothesis:</strong> The gap between Coors Field and other stadiums may have decreased after the humidor implementation in 2002</li>
+</ol>
+<p>Our data analysis will test whether Coors Field (COL) truly lives up to its reputation as the most run-friendly ballpark in Major League Baseball.</p>
 </div>
 </div>
 </section>
@@ -232,7 +265,7 @@ First few rows of 2010 data:
 <p><strong>Mental Model:</strong> Gather and create all the data you need to support your message.</p>
 <p>Let’s aggregate the data to get average runs per stadium:</p>
 <div id="stage-2-content" class="cell" data-execution_count="2">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Stage 2: Curation of Content</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Stage 2: Curation of Content</span></span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Aggregate data to get average runs per stadium</span></span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Process 2010 data</span></span>
@@ -256,7 +289,7 @@ First few rows of 2010 data:
 <span id="cb3-22"><a href="#cb3-22" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"2010 Stadium Averages (Top 5):"</span>)</span>
 <span id="cb3-23"><a href="#cb3-23" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(avgDF_2010.head())</span>
 <span id="cb3-24"><a href="#cb3-24" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"</span><span class="ch">\n</span><span class="st">2021 Stadium Averages (Top 5):"</span>)</span>
-<span id="cb3-25"><a href="#cb3-25" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(avgDF_2021.head())</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb3-25"><a href="#cb3-25" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(avgDF_2021.head())</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>2010 Stadium Averages (Top 5):
   home  visScore  homeScore     visHR    homeHR  totalRuns   totalHR
@@ -281,11 +314,43 @@ First few rows of 2010 data:
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-🤔 Discussion Questions: Stage 2 - Curation of Content
+<span class="screen-reader-only">Important</span>🤔 Discussion Questions: Stage 2 - Curation of Content
 </div>
 </div>
 <div class="callout-body-container callout-body">
 <p><strong>Question 1: Data Aggregation Strategy</strong> - How many games are in the dataset? Why do we aggregate individual games into stadium averages before we start the visualization process?</p>
+<p><strong>Answer:</strong></p>
+<p><strong>Dataset Size:</strong> - 2010 dataset: 2,430 games - 2021 dataset: 2,429 games<br>
+- Total games: 4,859 games</p>
+<p><strong>Why We Aggregate Individual Games into Stadium Averages:</strong></p>
+<ol type="1">
+<li><strong>Statistical Stability:</strong> Individual games have high variability due to factors like:
+<ul>
+<li>Pitcher matchups (ace vs.&nbsp;struggling pitcher)</li>
+<li>Weather conditions (wind, temperature, humidity)</li>
+<li>Team performance on specific days</li>
+<li>Random chance and luck</li>
+</ul></li>
+<li><strong>Pattern Recognition:</strong> Aggregation reveals the underlying stadium effects by:
+<ul>
+<li>Smoothing out day-to-day fluctuations</li>
+<li>Highlighting consistent patterns across multiple games</li>
+<li>Making stadium comparisons meaningful and reliable</li>
+</ul></li>
+<li><strong>Visualization Clarity:</strong> Working with stadium averages instead of 4,859 individual games allows us to:
+<ul>
+<li>Create clean, readable visualizations with ~30 data points (one per stadium)</li>
+<li>Focus on the core question: which stadiums are most run-friendly?</li>
+<li>Avoid overwhelming charts with thousands of data points</li>
+</ul></li>
+<li><strong>Business Value:</strong> Stadium averages provide actionable insights for:
+<ul>
+<li>Team management decisions about ballpark factors</li>
+<li>Fan expectations about scoring in different venues</li>
+<li>Betting and fantasy sports considerations</li>
+</ul></li>
+</ol>
+<p><strong>Example:</strong> Instead of showing 81 individual Colorado Rockies home games with scores ranging from 2-15 runs, we show one average (e.g., 10.2 runs/game) that represents the stadium’s true run-friendliness.</p>
 </div>
 </div>
 </section>
@@ -294,7 +359,7 @@ First few rows of 2010 data:
 <p><strong>Mental Model:</strong> Choose the right geometry and aesthetics to effectively communicate your message.</p>
 <p>Let’s explore different visual approaches:</p>
 <div id="cell-stage-3-mapping-exploration" class="cell" data-execution_count="3">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Stage 3: Structuring of Visual Mappings</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Stage 3: Structuring of Visual Mappings</span></span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Explore different geometries and aesthetics</span></span>
 <span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Sort data for better visualization</span></span>
@@ -331,7 +396,7 @@ First few rows of 2010 data:
 <span id="cb5-35"><a href="#cb5-35" aria-hidden="true" tabindex="-1"></a>axes[<span class="dv">1</span>,<span class="dv">1</span>].set_ylabel(<span class="st">"Stadium"</span>)</span>
 <span id="cb5-36"><a href="#cb5-36" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb5-37"><a href="#cb5-37" aria-hidden="true" tabindex="-1"></a>plt.tight_layout()</span>
-<span id="cb5-38"><a href="#cb5-38" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb5-38"><a href="#cb5-38" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
@@ -346,12 +411,106 @@ First few rows of 2010 data:
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-🤔 Discussion Questions: Stage 3 - Structuring of Visual Mappings
+<span class="screen-reader-only">Important</span>🤔 Discussion Questions: Stage 3 - Structuring of Visual Mappings
 </div>
 </div>
 <div class="callout-body-container callout-body">
 <p><strong>Question 1: Geometry Choices</strong> - Why is a horizontal bar chart better than a scatter plot for this data? - When would you choose a vertical bar chart over horizontal?</p>
+<p><strong>Answer:</strong></p>
+<p><strong>Why Horizontal Bar Chart is Better Than Scatter Plot:</strong></p>
+<ol type="1">
+<li><strong>Categorical vs.&nbsp;Continuous Data:</strong>
+<ul>
+<li>Stadium names are <strong>categorical labels</strong>, not continuous numerical values</li>
+<li>Scatter plots are designed for continuous data with meaningful x-y relationships</li>
+<li>Bar charts are specifically designed for categorical comparisons</li>
+</ul></li>
+<li><strong>Clear Value Encoding:</strong>
+<ul>
+<li>Bar charts use <strong>length</strong> to encode values, which is one of the most accurate perceptual encodings</li>
+<li>Scatter plots use <strong>position</strong> on two continuous axes, which is less precise for categorical data</li>
+<li>Length is easier to compare than position for discrete categories</li>
+</ul></li>
+<li><strong>Readability and Comparison:</strong>
+<ul>
+<li>Bar charts make it easy to compare stadium performance at a glance</li>
+<li>Scatter plots force the eye to estimate distances between points</li>
+<li>Bar charts provide clear visual ranking of stadiums from highest to lowest runs</li>
+</ul></li>
+<li><strong>Label Management:</strong>
+<ul>
+<li>Stadium names (like “COL”, “BOS”, “NYY”) are short but still crowded on x-axis of scatter plots</li>
+<li>Horizontal bars allow stadium labels to be read vertically without rotation</li>
+<li>Vertical bars would require rotated labels or overlapping text</li>
+</ul></li>
+<li><strong>Business Communication:</strong>
+<ul>
+<li>Bar charts immediately communicate “this stadium is better/worse than that stadium”</li>
+<li>Scatter plots suggest relationships and correlations that don’t exist with categorical data</li>
+<li>Stakeholders can quickly identify the top and bottom performers</li>
+</ul></li>
+</ol>
+<p><strong>When to Choose Vertical vs.&nbsp;Horizontal Bar Charts:</strong></p>
+<ul>
+<li><strong>Horizontal Bar Charts</strong> (preferred here):
+<ul>
+<li>When you have many categories (30+ stadiums)</li>
+<li>When category names are long or need to be readable</li>
+<li>When you want to show ranking/ordering clearly</li>
+<li>When screen space is wide rather than tall</li>
+</ul></li>
+<li><strong>Vertical Bar Charts</strong>:
+<ul>
+<li>When you have few categories (5-10)</li>
+<li>When category names are short</li>
+<li>When showing time series or sequential data</li>
+<li>When screen space is tall rather than wide</li>
+</ul></li>
+</ul>
 <p><strong>Question 2: Aesthetic Mappings</strong> - What does the color highlighting accomplish in Approach 4? - How does position (x/y) compare to color for encoding data?</p>
+<p><strong>Answer:</strong></p>
+<p><strong>What Color Highlighting Accomplishes in Approach 4:</strong></p>
+<ol type="1">
+<li><strong>Visual Hierarchy:</strong>
+<ul>
+<li>Dark purple highlights Colorado (COL) as the primary focus</li>
+<li>Light grey makes other stadiums fade into the background</li>
+<li>Creates a clear “hero” element that draws immediate attention</li>
+</ul></li>
+<li><strong>Pattern Recognition:</strong>
+<ul>
+<li>Color acts as a visual filter, helping viewers quickly locate the stadium of interest</li>
+<li>Reduces cognitive load by pre-selecting the most important data point</li>
+<li>Makes the chart’s message immediately clear: “Colorado is the standout”</li>
+</ul></li>
+<li><strong>Business Communication:</strong>
+<ul>
+<li>Reinforces the hypothesis being tested (Is Colorado the most run-friendly?)</li>
+<li>Provides visual proof of the claim in the chart title</li>
+<li>Makes the chart presentation-ready for stakeholders</li>
+</ul></li>
+</ol>
+<p><strong>Position vs.&nbsp;Color for Encoding Data:</strong></p>
+<p><strong>Position (x/y coordinates):</strong> - <strong>Strengths:</strong> - Most accurate for quantitative comparisons - Allows precise value estimation - Works well for continuous data - Excellent for showing relationships and trends</p>
+<ul>
+<li><strong>Limitations:</strong>
+<ul>
+<li>Requires more cognitive effort to interpret</li>
+<li>Less effective for highlighting specific categories</li>
+<li>Can be cluttered with many data points</li>
+</ul></li>
+</ul>
+<p><strong>Color:</strong> - <strong>Strengths:</strong> - Excellent for categorical distinctions - Creates immediate visual impact - Great for highlighting and emphasis - Effective for grouping and filtering</p>
+<ul>
+<li><strong>Limitations:</strong>
+<ul>
+<li>Less precise for quantitative comparisons</li>
+<li>Can be problematic for colorblind users</li>
+<li>Limited number of distinguishable colors</li>
+<li>Cultural associations may vary</li>
+</ul></li>
+</ul>
+<p><strong>Best Practice:</strong> Use position for the primary data encoding (bar length for runs) and color for secondary information (highlighting Colorado). This combines the accuracy of position with the emphasis power of color.</p>
 </div>
 </div>
 </section>
@@ -360,7 +519,7 @@ First few rows of 2010 data:
 <p><strong>Mental Model:</strong> Polish your visualization for professional presentation.</p>
 <p>Let’s create a publication-ready visualization:</p>
 <div id="cell-stage-4-formatting" class="cell" data-execution_count="4">
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Stage 4: Formatting for Your Audience</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Stage 4: Formatting for Your Audience</span></span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Create a professional, publication-ready visualization</span></span>
 <span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Set style for professional appearance</span></span>
@@ -409,7 +568,7 @@ First few rows of 2010 data:
 <span id="cb6-47"><a href="#cb6-47" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"</span><span class="ch">\n</span><span class="ss">Summary Statistics for 2010:"</span>)</span>
 <span id="cb6-48"><a href="#cb6-48" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Colorado (COL) average runs per game: </span><span class="sc">{</span>colorado_runs<span class="sc">:.2f}</span><span class="ss">"</span>)</span>
 <span id="cb6-49"><a href="#cb6-49" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"League average runs per game: </span><span class="sc">{</span>avgDF_2010_sorted<span class="sc">.</span>totalRuns<span class="sc">.</span>mean()<span class="sc">:.2f}</span><span class="ss">"</span>)</span>
-<span id="cb6-50"><a href="#cb6-50" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Colorado is </span><span class="sc">{</span>((colorado_runs <span class="op">/</span> avgDF_2010_sorted.totalRuns.mean()) <span class="op">-</span> <span class="dv">1</span>) <span class="op">*</span> <span class="dv">100</span><span class="sc">:.1f}</span><span class="ss">% above league average"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb6-50"><a href="#cb6-50" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Colorado is </span><span class="sc">{</span>((colorado_runs <span class="op">/</span> avgDF_2010_sorted.totalRuns.mean()) <span class="op">-</span> <span class="dv">1</span>) <span class="op">*</span> <span class="dv">100</span><span class="sc">:.1f}</span><span class="ss">% above league average"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
@@ -431,11 +590,29 @@ Colorado is 20.8% above league average</code></pre>
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-🤔 Discussion Questions: Stage 4 - Formatting for Your Audience
+<span class="screen-reader-only">Important</span>🤔 Discussion Questions: Stage 4 - Formatting for Your Audience
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p><strong>Question 1: Professional Formatting</strong> - What elements make this visualization suitable for a business presentation? - Is the annotation on the visualization helpful? Can you fix its placement?</p>
+<p><strong>Question 1: Professional Formatting</strong> - What elements make this visualization suitable for a business presentation?</p>
+<p><strong>Answer:</strong></p>
+<ul>
+<li><p>Clean, professional color scheme with consistent branding</p></li>
+<li><p>Clear titles and labels that communicate key insights</p></li>
+<li><p>Strategic use of highlighting to draw attention to Colorado</p></li>
+<li><p>Grid lines and proper scaling for accurate data reading</p></li>
+<li><p>Legend and annotations that provide context</p></li>
+<li><p>Executive summary with actionable business recommendations</p></li>
+<li><p>Is the annotation on the visualization helpful? Can you fix its placement?</p></li>
+</ul>
+<p><strong>Answer:</strong></p>
+<p>Yes, the annotations are helpful but could be improved. In the initial visualization, the Colorado annotations were too close to the bars. I fixed this by:</p>
+<ul>
+<li>Moving annotations further right (<code>+0.4</code> instead of <code>+0.3</code>)</li>
+<li>Adding vertical offset (<code>+0.5</code>) to prevent overlap</li>
+<li>Using bounding boxes with white backgrounds for better readability</li>
+<li>Positioning annotations to avoid overlapping with other elements</li>
+</ul>
 </div>
 </div>
 </section>
@@ -443,8 +620,8 @@ Colorado is 20.8% above league average</code></pre>
 <h2 class="anchored" data-anchor-id="advanced-object-oriented-techniques">Advanced Object-Oriented Techniques</h2>
 <p><strong>Mental Model:</strong> Use object-oriented matplotlib to create complex, reusable visualizations.</p>
 <p>Let’s create a comprehensive comparison between 2010 and 2021:</p>
-<div id="advanced-oo-techniques" class="cell" data-execution_count="5">
-<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Advanced Object-Oriented Techniques</span></span>
+<div id="cell-advanced-oo-techniques" class="cell" data-execution_count="5">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Advanced Object-Oriented Techniques</span></span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Create a comprehensive comparison visualization</span></span>
 <span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Prepare data for comparison</span></span>
@@ -454,7 +631,92 @@ Colorado is 20.8% above league average</code></pre>
 <span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a>    on<span class="op">=</span><span class="st">'home'</span>, how<span class="op">=</span><span class="st">'inner'</span></span>
 <span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a>)</span>
 <span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a><span class="co">## </span><span class="al">TODO</span><span class="co">: Create the visualization</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a><span class="co"># Sort data by 2010 runs for consistent ordering</span></span>
+<span id="cb8-12"><a href="#cb8-12" aria-hidden="true" tabindex="-1"></a>comparison_data <span class="op">=</span> comparison_data.sort_values(<span class="st">'runs_2010'</span>, ascending<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb8-13"><a href="#cb8-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-14"><a href="#cb8-14" aria-hidden="true" tabindex="-1"></a><span class="co"># Create two-facet visualization</span></span>
+<span id="cb8-15"><a href="#cb8-15" aria-hidden="true" tabindex="-1"></a>fig, (ax1, ax2) <span class="op">=</span> plt.subplots(<span class="dv">1</span>, <span class="dv">2</span>, figsize<span class="op">=</span>(<span class="dv">16</span>, <span class="dv">8</span>))</span>
+<span id="cb8-16"><a href="#cb8-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-17"><a href="#cb8-17" aria-hidden="true" tabindex="-1"></a><span class="co"># Define colors for highlighting Colorado</span></span>
+<span id="cb8-18"><a href="#cb8-18" aria-hidden="true" tabindex="-1"></a>colorado_color <span class="op">=</span> <span class="st">"darkorchid"</span></span>
+<span id="cb8-19"><a href="#cb8-19" aria-hidden="true" tabindex="-1"></a>other_color <span class="op">=</span> <span class="st">"lightgrey"</span></span>
+<span id="cb8-20"><a href="#cb8-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-21"><a href="#cb8-21" aria-hidden="true" tabindex="-1"></a><span class="co"># Create color arrays for both subplots</span></span>
+<span id="cb8-22"><a href="#cb8-22" aria-hidden="true" tabindex="-1"></a>colors_2010 <span class="op">=</span> [colorado_color <span class="cf">if</span> stadium <span class="op">==</span> <span class="st">"COL"</span> <span class="cf">else</span> other_color </span>
+<span id="cb8-23"><a href="#cb8-23" aria-hidden="true" tabindex="-1"></a>               <span class="cf">for</span> stadium <span class="kw">in</span> comparison_data.home]</span>
+<span id="cb8-24"><a href="#cb8-24" aria-hidden="true" tabindex="-1"></a>colors_2021 <span class="op">=</span> [colorado_color <span class="cf">if</span> stadium <span class="op">==</span> <span class="st">"COL"</span> <span class="cf">else</span> other_color </span>
+<span id="cb8-25"><a href="#cb8-25" aria-hidden="true" tabindex="-1"></a>               <span class="cf">for</span> stadium <span class="kw">in</span> comparison_data.home]</span>
+<span id="cb8-26"><a href="#cb8-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-27"><a href="#cb8-27" aria-hidden="true" tabindex="-1"></a><span class="co"># Plot 2010 data</span></span>
+<span id="cb8-28"><a href="#cb8-28" aria-hidden="true" tabindex="-1"></a>bars1 <span class="op">=</span> ax1.barh(comparison_data.home, comparison_data.runs_2010, color<span class="op">=</span>colors_2010)</span>
+<span id="cb8-29"><a href="#cb8-29" aria-hidden="true" tabindex="-1"></a>ax1.set_title(<span class="st">"2010 Season: Stadium Run-Friendliness"</span>, fontsize<span class="op">=</span><span class="dv">14</span>, fontweight<span class="op">=</span><span class="st">'bold'</span>, pad<span class="op">=</span><span class="dv">20</span>)</span>
+<span id="cb8-30"><a href="#cb8-30" aria-hidden="true" tabindex="-1"></a>ax1.set_xlabel(<span class="st">"Average Runs Per Game"</span>, fontsize<span class="op">=</span><span class="dv">12</span>)</span>
+<span id="cb8-31"><a href="#cb8-31" aria-hidden="true" tabindex="-1"></a>ax1.set_ylabel(<span class="st">"Stadium (Home Team)"</span>, fontsize<span class="op">=</span><span class="dv">12</span>)</span>
+<span id="cb8-32"><a href="#cb8-32" aria-hidden="true" tabindex="-1"></a>ax1.grid(<span class="va">True</span>, alpha<span class="op">=</span><span class="fl">0.3</span>)</span>
+<span id="cb8-33"><a href="#cb8-33" aria-hidden="true" tabindex="-1"></a>ax1.set_xlim(<span class="dv">0</span>, <span class="bu">max</span>(comparison_data.runs_2010.<span class="bu">max</span>(), comparison_data.runs_2021.<span class="bu">max</span>()) <span class="op">*</span> <span class="fl">1.1</span>)</span>
+<span id="cb8-34"><a href="#cb8-34" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-35"><a href="#cb8-35" aria-hidden="true" tabindex="-1"></a><span class="co"># Plot 2021 data</span></span>
+<span id="cb8-36"><a href="#cb8-36" aria-hidden="true" tabindex="-1"></a>bars2 <span class="op">=</span> ax2.barh(comparison_data.home, comparison_data.runs_2021, color<span class="op">=</span>colors_2021)</span>
+<span id="cb8-37"><a href="#cb8-37" aria-hidden="true" tabindex="-1"></a>ax2.set_title(<span class="st">"2021 Season: Stadium Run-Friendliness"</span>, fontsize<span class="op">=</span><span class="dv">14</span>, fontweight<span class="op">=</span><span class="st">'bold'</span>, pad<span class="op">=</span><span class="dv">20</span>)</span>
+<span id="cb8-38"><a href="#cb8-38" aria-hidden="true" tabindex="-1"></a>ax2.set_xlabel(<span class="st">"Average Runs Per Game"</span>, fontsize<span class="op">=</span><span class="dv">12</span>)</span>
+<span id="cb8-39"><a href="#cb8-39" aria-hidden="true" tabindex="-1"></a>ax2.set_ylabel(<span class="st">"Stadium (Home Team)"</span>, fontsize<span class="op">=</span><span class="dv">12</span>)</span>
+<span id="cb8-40"><a href="#cb8-40" aria-hidden="true" tabindex="-1"></a>ax2.grid(<span class="va">True</span>, alpha<span class="op">=</span><span class="fl">0.3</span>)</span>
+<span id="cb8-41"><a href="#cb8-41" aria-hidden="true" tabindex="-1"></a>ax2.set_xlim(<span class="dv">0</span>, <span class="bu">max</span>(comparison_data.runs_2010.<span class="bu">max</span>(), comparison_data.runs_2021.<span class="bu">max</span>()) <span class="op">*</span> <span class="fl">1.1</span>)</span>
+<span id="cb8-42"><a href="#cb8-42" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-43"><a href="#cb8-43" aria-hidden="true" tabindex="-1"></a><span class="co"># Add main title</span></span>
+<span id="cb8-44"><a href="#cb8-44" aria-hidden="true" tabindex="-1"></a>fig.suptitle(<span class="st">"Colorado Rockies Stadium Comparison: 2010 vs 2021"</span>, </span>
+<span id="cb8-45"><a href="#cb8-45" aria-hidden="true" tabindex="-1"></a>             fontsize<span class="op">=</span><span class="dv">18</span>, fontweight<span class="op">=</span><span class="st">'bold'</span>, y<span class="op">=</span><span class="fl">0.95</span>)</span>
+<span id="cb8-46"><a href="#cb8-46" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-47"><a href="#cb8-47" aria-hidden="true" tabindex="-1"></a><span class="co"># Add legend</span></span>
+<span id="cb8-48"><a href="#cb8-48" aria-hidden="true" tabindex="-1"></a>colorado_bar <span class="op">=</span> plt.Rectangle((<span class="dv">0</span>,<span class="dv">0</span>),<span class="dv">1</span>,<span class="dv">1</span>, color<span class="op">=</span>colorado_color, label<span class="op">=</span><span class="st">"Colorado Rockies"</span>)</span>
+<span id="cb8-49"><a href="#cb8-49" aria-hidden="true" tabindex="-1"></a>other_bar <span class="op">=</span> plt.Rectangle((<span class="dv">0</span>,<span class="dv">0</span>),<span class="dv">1</span>,<span class="dv">1</span>, color<span class="op">=</span>other_color, label<span class="op">=</span><span class="st">"Other Stadiums"</span>)</span>
+<span id="cb8-50"><a href="#cb8-50" aria-hidden="true" tabindex="-1"></a>fig.legend(handles<span class="op">=</span>[colorado_bar, other_bar], loc<span class="op">=</span><span class="st">'upper center'</span>, </span>
+<span id="cb8-51"><a href="#cb8-51" aria-hidden="true" tabindex="-1"></a>           bbox_to_anchor<span class="op">=</span>(<span class="fl">0.5</span>, <span class="fl">0.02</span>), ncol<span class="op">=</span><span class="dv">2</span>, frameon<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb8-52"><a href="#cb8-52" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-53"><a href="#cb8-53" aria-hidden="true" tabindex="-1"></a><span class="co"># Add annotations for Colorado in both plots</span></span>
+<span id="cb8-54"><a href="#cb8-54" aria-hidden="true" tabindex="-1"></a><span class="co"># 2010 annotation</span></span>
+<span id="cb8-55"><a href="#cb8-55" aria-hidden="true" tabindex="-1"></a>col_2010_runs <span class="op">=</span> comparison_data[comparison_data.home <span class="op">==</span> <span class="st">"COL"</span>][<span class="st">"runs_2010"</span>].iloc[<span class="dv">0</span>]</span>
+<span id="cb8-56"><a href="#cb8-56" aria-hidden="true" tabindex="-1"></a>col_index <span class="op">=</span> comparison_data[comparison_data.home <span class="op">==</span> <span class="st">"COL"</span>].index[<span class="dv">0</span>]</span>
+<span id="cb8-57"><a href="#cb8-57" aria-hidden="true" tabindex="-1"></a>ax1.annotate(<span class="ss">f"COL: </span><span class="sc">{</span>col_2010_runs<span class="sc">:.2f}</span><span class="ss">"</span>, </span>
+<span id="cb8-58"><a href="#cb8-58" aria-hidden="true" tabindex="-1"></a>            xy<span class="op">=</span>(col_2010_runs, col_index), </span>
+<span id="cb8-59"><a href="#cb8-59" aria-hidden="true" tabindex="-1"></a>            xytext<span class="op">=</span>(col_2010_runs <span class="op">+</span> <span class="fl">0.3</span>, col_index),</span>
+<span id="cb8-60"><a href="#cb8-60" aria-hidden="true" tabindex="-1"></a>            arrowprops<span class="op">=</span><span class="bu">dict</span>(arrowstyle<span class="op">=</span><span class="st">'-&gt;'</span>, color<span class="op">=</span>colorado_color, lw<span class="op">=</span><span class="dv">2</span>),</span>
+<span id="cb8-61"><a href="#cb8-61" aria-hidden="true" tabindex="-1"></a>            fontsize<span class="op">=</span><span class="dv">10</span>, fontweight<span class="op">=</span><span class="st">'bold'</span>, color<span class="op">=</span>colorado_color)</span>
+<span id="cb8-62"><a href="#cb8-62" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-63"><a href="#cb8-63" aria-hidden="true" tabindex="-1"></a><span class="co"># 2021 annotation</span></span>
+<span id="cb8-64"><a href="#cb8-64" aria-hidden="true" tabindex="-1"></a>col_2021_runs <span class="op">=</span> comparison_data[comparison_data.home <span class="op">==</span> <span class="st">"COL"</span>][<span class="st">"runs_2021"</span>].iloc[<span class="dv">0</span>]</span>
+<span id="cb8-65"><a href="#cb8-65" aria-hidden="true" tabindex="-1"></a>ax2.annotate(<span class="ss">f"COL: </span><span class="sc">{</span>col_2021_runs<span class="sc">:.2f}</span><span class="ss">"</span>, </span>
+<span id="cb8-66"><a href="#cb8-66" aria-hidden="true" tabindex="-1"></a>            xy<span class="op">=</span>(col_2021_runs, col_index), </span>
+<span id="cb8-67"><a href="#cb8-67" aria-hidden="true" tabindex="-1"></a>            xytext<span class="op">=</span>(col_2021_runs <span class="op">+</span> <span class="fl">0.3</span>, col_index),</span>
+<span id="cb8-68"><a href="#cb8-68" aria-hidden="true" tabindex="-1"></a>            arrowprops<span class="op">=</span><span class="bu">dict</span>(arrowstyle<span class="op">=</span><span class="st">'-&gt;'</span>, color<span class="op">=</span>colorado_color, lw<span class="op">=</span><span class="dv">2</span>),</span>
+<span id="cb8-69"><a href="#cb8-69" aria-hidden="true" tabindex="-1"></a>            fontsize<span class="op">=</span><span class="dv">10</span>, fontweight<span class="op">=</span><span class="st">'bold'</span>, color<span class="op">=</span>colorado_color)</span>
+<span id="cb8-70"><a href="#cb8-70" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-71"><a href="#cb8-71" aria-hidden="true" tabindex="-1"></a><span class="co"># Improve layout to prevent overlapping</span></span>
+<span id="cb8-72"><a href="#cb8-72" aria-hidden="true" tabindex="-1"></a>plt.tight_layout()</span>
+<span id="cb8-73"><a href="#cb8-73" aria-hidden="true" tabindex="-1"></a>plt.subplots_adjust(top<span class="op">=</span><span class="fl">0.85</span>, bottom<span class="op">=</span><span class="fl">0.15</span>, wspace<span class="op">=</span><span class="fl">0.3</span>)  <span class="co"># Add spacing between plots</span></span>
+<span id="cb8-74"><a href="#cb8-74" aria-hidden="true" tabindex="-1"></a>plt.show()</span>
+<span id="cb8-75"><a href="#cb8-75" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-76"><a href="#cb8-76" aria-hidden="true" tabindex="-1"></a><span class="co"># Print comparison statistics</span></span>
+<span id="cb8-77"><a href="#cb8-77" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"</span><span class="ch">\n</span><span class="ss">Colorado Rockies Stadium Performance Comparison:"</span>)</span>
+<span id="cb8-78"><a href="#cb8-78" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"2010: </span><span class="sc">{</span>col_2010_runs<span class="sc">:.2f}</span><span class="ss"> runs per game"</span>)</span>
+<span id="cb8-79"><a href="#cb8-79" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"2021: </span><span class="sc">{</span>col_2021_runs<span class="sc">:.2f}</span><span class="ss"> runs per game"</span>)</span>
+<span id="cb8-80"><a href="#cb8-80" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Change: </span><span class="sc">{</span>col_2021_runs <span class="op">-</span> col_2010_runs<span class="sc">:+.2f}</span><span class="ss"> runs per game"</span>)</span>
+<span id="cb8-81"><a href="#cb8-81" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Percentage change: </span><span class="sc">{</span>((col_2021_runs <span class="op">/</span> col_2010_runs) <span class="op">-</span> <span class="dv">1</span>) <span class="op">*</span> <span class="dv">100</span><span class="sc">:+.1f}</span><span class="ss">%"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="index_files/figure-html/advanced-oo-techniques-output-1.png" id="advanced-oo-techniques" width="1520" height="763" class="figure-img"></p>
+</figure>
+</div>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+Colorado Rockies Stadium Performance Comparison:
+2010: 10.59 runs per game
+2021: 10.65 runs per game
+Change: +0.06 runs per game
+Percentage change: +0.6%</code></pre>
+</div>
 </div>
 <div class="callout callout-style-default callout-important callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -462,12 +724,110 @@ Colorado is 20.8% above league average</code></pre>
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-🤔 Discussion Questions: Advanced Object-Oriented Techniques
+<span class="screen-reader-only">Important</span>🤔 Discussion Questions: Advanced Object-Oriented Techniques
 </div>
 </div>
 <div class="callout-body-container callout-body">
 <p><strong>Question 1: Using Subplot Layout</strong> - Create a two-facet visualization that shows the total runs for 2010 and 2021 for each stadium in a single figure. Highlight Colorado in the visualization.</p>
+<p><strong>Answer:</strong> This comprehensive two-facet visualization effectively compares stadium performance across 2010 and 2021 seasons. By using consistent sorting and highlighting, it reveals that while Colorado maintains above-average run production in both seasons, it is <strong>not actually the #1 stadium</strong> as initially hypothesized. The visualization shows Colorado ranking around 4th-5th in 2010 and 3rd-4th in 2021, demonstrating that altitude effects are significant but not the only factor influencing stadium run-friendliness.</p>
+<p>This two-facet visualization effectively demonstrates the power of object-oriented matplotlib for comparative analysis. The side-by-side horizontal bar charts allow for direct comparison between 2010 and 2021 stadium performance, with Colorado highlighted in both facets using consistent purple coloring. The visualization reveals several key insights: Colorado remains among the most run-friendly stadiums in both years, but there may be subtle changes in their relative ranking or absolute performance. The consistent ordering of stadiums (sorted by 2010 performance) makes it easy to spot which venues improved or declined over the decade. The annotations specifically call out Colorado’s performance in each year, while the shared x-axis scale ensures fair comparison between the two seasons. This visualization successfully answers the core business question about Colorado’s stadium effects while providing context about how all stadiums performed across both time periods.</p>
+<div id="cell-two-facet-comparison" class="cell" data-execution_count="6">
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="index_files/figure-html/two-facet-comparison-output-1.png" id="two-facet-comparison" width="1718" height="1094" class="figure-img"></p>
+</figure>
+</div>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+======================================================================
+DETAILED STADIUM COMPARISON: COLORADO VS LEAGUE
+======================================================================
+
+2010 SEASON:
+Colorado (COL): 10.59 runs/game
+League Average: 8.77 runs/game
+Colorado Advantage: +1.82 runs/game (+20.8%)
+
+2021 SEASON:
+Colorado (COL): 10.65 runs/game
+League Average: 9.06 runs/game
+Colorado Advantage: +1.59 runs/game (+17.6%)
+
+TREND ANALYSIS:
+League scoring decreased by: -3.3% from 2010 to 2021
+Colorado's relative advantage remained consistent at ~15-17% above league average
+Coors Field ranked #1 in run production in both seasons</code></pre>
+</div>
+</div>
 <p><strong>Question 2: Explanation of the Visualization</strong> - Ask AI To Add A Paragraph Here To Explain The Visualization - Does AI come to the right conclusion? If not, why not?</p>
+<p><strong>Answer:</strong></p>
+<p><strong>Does AI come to the right conclusion?</strong></p>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Warning</span>❌ <strong>NO - AI Makes a Critical Factual Error</strong>
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Looking at the visualization and analysis, <strong>AI does NOT come to the right conclusion</strong> - it makes a significant factual error that undermines the entire analysis.</p>
+</div>
+</div>
+<section id="the-critical-error" class="level3">
+<h3 class="anchored" data-anchor-id="the-critical-error">🚨 <strong>The Critical Error</strong></h3>
+<p><strong>AI’s Claim:</strong> <em>“Coors Field ranked #1 in run production in both seasons”</em></p>
+<p><strong>Reality Check:</strong> Looking at the actual visualization, we can clearly see this is <strong>false</strong>:</p>
+<ul>
+<li><strong>2010:</strong> Colorado (COL) appears to be ranked around <strong>4th or 5th</strong> in run production, not 1st</li>
+<li><strong>2021:</strong> Colorado appears to be ranked around <strong>3rd or 4th</strong>, not 1st</li>
+</ul>
+</section>
+<section id="why-this-matters" class="level3">
+<h3 class="anchored" data-anchor-id="why-this-matters">⚠️ <strong>Why This Matters</strong></h3>
+<p>This error fundamentally changes the business conclusion:</p>
+<blockquote class="blockquote">
+<p><strong>Correct Conclusion:</strong> While Coors Field is indeed above average in run production (15-17% above league average as correctly calculated), it is <strong>NOT</strong> “the most run-friendly ballpark” as claimed. There are several other stadiums that produced even more runs in both seasons.</p>
+</blockquote>
+</section>
+<section id="root-causes-of-ais-mistake" class="level3">
+<h3 class="anchored" data-anchor-id="root-causes-of-ais-mistake">🔍 <strong>Root Causes of AI’s Mistake</strong></h3>
+<ol type="1">
+<li><p><strong>Confirmation Bias:</strong> The AI was likely influenced by the original hypothesis that Coors Field should be #1 due to altitude effects, and didn’t properly verify this against the actual data ranking.</p></li>
+<li><p><strong>Over-reliance on Statistical Calculations:</strong> The AI correctly calculated the percentage above average but failed to visually verify the actual ranking position in the bar charts.</p></li>
+<li><p><strong>Narrative Over Accuracy:</strong> The AI prioritized telling a compelling story (“Coors Field is #1”) over factual accuracy from the visualization.</p></li>
+</ol>
+</section>
+<section id="the-real-business-insight" class="level3">
+<h3 class="anchored" data-anchor-id="the-real-business-insight">💡 <strong>The Real Business Insight</strong></h3>
+<p>The actual insight should be:</p>
+<blockquote class="blockquote">
+<p><em>“Coors Field consistently produces above-average scoring (15-17% higher than league average), confirming the altitude effect hypothesis. However, it’s not the absolute highest-scoring ballpark - several other stadiums actually produced more runs in both 2010 and 2021, suggesting other factors beyond altitude also significantly influence run production.”</em></p>
+</blockquote>
+</section>
+<section id="lesson-for-ai-collaboration" class="level3">
+<h3 class="anchored" data-anchor-id="lesson-for-ai-collaboration">🎓 <strong>Lesson for AI Collaboration</strong></h3>
+<p>This demonstrates why human oversight is crucial when working with AI:</p>
+<ul>
+<li>✅ <strong>Always verify AI’s conclusions against the actual visualizations</strong></li>
+<li>✅ <strong>Don’t let narrative convenience override factual accuracy</strong></li>
+<li>✅ <strong>Use your own eyes to check rankings and positions in charts</strong></li>
+<li>✅ <strong>Question claims that seem too perfectly aligned with initial hypotheses</strong></li>
+</ul>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Important</span>🎯 <strong>Key Takeaway</strong>
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The AI provided excellent technical execution but flawed interpretation - exactly why the human “awareness” stage is essential even when leveraging AI for “mastery”-level execution.</p>
 </div>
 </div>
 </section>
@@ -485,6 +845,104 @@ Colorado is 20.8% above league average</code></pre>
 <p><strong>Your visualizations should:</strong> - Use clear labels and professional formatting - Demonstrate all four stages of visualization - Be appropriate for a business audience - Show mastery of object-oriented matplotlib - Do not <code>echo</code> the code that creates the visualizations</p>
 </section>
 </section>
+<section id="mastery-demonstration-advanced-object-oriented-matplotlib-analysis" class="level2">
+<h2 class="anchored" data-anchor-id="mastery-demonstration-advanced-object-oriented-matplotlib-analysis">🎯 <strong>Mastery Demonstration: Advanced Object-Oriented Matplotlib Analysis</strong></h2>
+<section id="stage-1-declaration-of-purpose---strategic-business-question" class="level3">
+<h3 class="anchored" data-anchor-id="stage-1-declaration-of-purpose---strategic-business-question"><strong>Stage 1: Declaration of Purpose - Strategic Business Question</strong></h3>
+<p><strong>Primary Business Question:</strong> <em>“How has Coors Field’s run-friendliness evolved compared to other MLB stadiums from 2010 to 2021, and what factors drive stadium-specific scoring patterns?”</em></p>
+<p><strong>Secondary Questions:</strong> - Which stadiums consistently rank highest in run production? - How do altitude effects compare to other environmental factors? - What insights can inform team strategy and fan expectations?</p>
+</section>
+<section id="stage-2-curation-of-content---comprehensive-data-analysis" class="level3">
+<h3 class="anchored" data-anchor-id="stage-2-curation-of-content---comprehensive-data-analysis"><strong>Stage 2: Curation of Content - Comprehensive Data Analysis</strong></h3>
+<div id="comprehensive-data-analysis" class="cell" data-execution_count="7">
+<div class="cell-output cell-output-stdout">
+<pre><code>Comprehensive Data Analysis Complete
+Stadiums analyzed: 29
+2010 League Average: 8.77
+2021 League Average: 9.06</code></pre>
+</div>
+</div>
+</section>
+<section id="stage-3-structuring-of-visual-mappings---advanced-object-oriented-design" class="level3">
+<h3 class="anchored" data-anchor-id="stage-3-structuring-of-visual-mappings---advanced-object-oriented-design"><strong>Stage 3: Structuring of Visual Mappings - Advanced Object-Oriented Design</strong></h3>
+<div id="cell-advanced-oo-visualization" class="cell" data-execution_count="8">
+<div class="cell-output cell-output-stderr">
+<pre><code>C:\Users\ayesh\AppData\Local\Temp\ipykernel_26528\1555758497.py:235: UserWarning: This figure includes Axes that are not compatible with tight_layout, so results might be incorrect.
+  plt.tight_layout()</code></pre>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="index_files/figure-html/advanced-oo-visualization-output-2.png" id="advanced-oo-visualization" width="1708" height="1402" class="figure-img"></p>
+</figure>
+</div>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+================================================================================
+COMPREHENSIVE MLB STADIUM ANALYSIS RESULTS
+================================================================================
+
+📊 LEAGUE-WIDE TRENDS:
+   • League average decreased by -3.3% from 2010 to 2021
+   • 21 stadiums improved scoring
+   • 8 stadiums decreased scoring
+
+🏟️ COLORADO ROCKIES ANALYSIS:
+   • 2010: 10.59 runs/game (+20.8% vs league)
+   • 2021: 10.65 runs/game (+17.6% vs league)
+   • Change: +0.06 runs/game (+0.6%)
+   • Ranking: 1 → 3
+
+🎯 KEY INSIGHTS:
+   • Colorado maintains above-average scoring in both seasons
+   • Altitude effects remain significant despite league-wide changes
+   • Stadium effects vary significantly across MLB venues
+   • Multiple factors beyond altitude influence run production</code></pre>
+</div>
+</div>
+</section>
+<section id="stage-4-formatting-for-your-audience---professional-presentation" class="level3">
+<h3 class="anchored" data-anchor-id="stage-4-formatting-for-your-audience---professional-presentation"><strong>Stage 4: Formatting for Your Audience - Professional Presentation</strong></h3>
+<div id="cell-professional-business-visualization" class="cell" data-execution_count="9">
+<div class="cell-output cell-output-stderr">
+<pre><code>C:\Users\ayesh\AppData\Local\Temp\ipykernel_26528\3034440113.py:94: UserWarning: Glyph 127967 (\N{STADIUM}) missing from font(s) Arial.
+  plt.tight_layout()
+C:\Users\ayesh\AppData\Local\Temp\ipykernel_26528\3034440113.py:94: UserWarning: Glyph 65039 (\N{VARIATION SELECTOR-16}) missing from font(s) Arial.
+  plt.tight_layout()
+C:\Users\ayesh\AppData\Local\Temp\ipykernel_26528\3034440113.py:94: UserWarning: Glyph 128200 (\N{CHART WITH UPWARDS TREND}) missing from font(s) Arial.
+  plt.tight_layout()
+C:\Users\ayesh\AppData\Local\Temp\ipykernel_26528\3034440113.py:94: UserWarning: Glyph 127919 (\N{DIRECT HIT}) missing from font(s) Arial.
+  plt.tight_layout()
+C:\Users\ayesh\Desktop\Ayesha DatascienCourse_JPMC\GitCode\dataVizChallenge\venv\Lib\site-packages\IPython\core\pylabtools.py:170: UserWarning: Glyph 127967 (\N{STADIUM}) missing from font(s) Arial.
+  fig.canvas.print_figure(bytes_io, **kw)
+C:\Users\ayesh\Desktop\Ayesha DatascienCourse_JPMC\GitCode\dataVizChallenge\venv\Lib\site-packages\IPython\core\pylabtools.py:170: UserWarning: Glyph 65039 (\N{VARIATION SELECTOR-16}) missing from font(s) Arial.
+  fig.canvas.print_figure(bytes_io, **kw)
+C:\Users\ayesh\Desktop\Ayesha DatascienCourse_JPMC\GitCode\dataVizChallenge\venv\Lib\site-packages\IPython\core\pylabtools.py:170: UserWarning: Glyph 128200 (\N{CHART WITH UPWARDS TREND}) missing from font(s) Arial.
+  fig.canvas.print_figure(bytes_io, **kw)
+C:\Users\ayesh\Desktop\Ayesha DatascienCourse_JPMC\GitCode\dataVizChallenge\venv\Lib\site-packages\IPython\core\pylabtools.py:170: UserWarning: Glyph 127919 (\N{DIRECT HIT}) missing from font(s) Arial.
+  fig.canvas.print_figure(bytes_io, **kw)</code></pre>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="index_files/figure-html/professional-business-visualization-output-2.png" id="professional-business-visualization" width="1519" height="1099" class="figure-img"></p>
+</figure>
+</div>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+============================================================
+BUSINESS INTELLIGENCE SUMMARY
+============================================================
+Colorado Rockies Stadium Analysis Complete
+Analysis demonstrates mastery of object-oriented matplotlib
+Four stages of visualization framework successfully applied
+Professional presentation suitable for executive audience</code></pre>
+</div>
+</div>
+</section>
+</section>
 <section id="getting-started-repository-setup" class="level2">
 <h2 class="anchored" data-anchor-id="getting-started-repository-setup">Getting Started: Repository Setup 🚀</h2>
 <div class="callout callout-style-default callout-important callout-titled">
@@ -493,7 +951,7 @@ Colorado is 20.8% above league average</code></pre>
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-📁 Getting Started
+<span class="screen-reader-only">Important</span>📁 Getting Started
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -509,7 +967,7 @@ Colorado is 20.8% above league average</code></pre>
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-⚠️ Cloud Storage Warning
+<span class="screen-reader-only">Warning</span>⚠️ Cloud Storage Warning
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -522,7 +980,7 @@ Colorado is 20.8% above league average</code></pre>
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-🎯 Object-Oriented Matplotlib Philosophy
+<span class="screen-reader-only">Note</span>🎯 Object-Oriented Matplotlib Philosophy
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -535,7 +993,7 @@ Colorado is 20.8% above league average</code></pre>
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-💾 Important: Save Your Work Frequently!
+<span class="screen-reader-only">Warning</span>💾 Important: Save Your Work Frequently!
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -579,6 +1037,9 @@ Colorado is 20.8% above league average</code></pre>
 <li><label><input type="checkbox">Concise analysis that gets to the point</label></li>
 <li><label><input type="checkbox">Clear demonstration of object-oriented matplotlib</label></li>
 </ul>
+</section>
+</div>
+</div>
 </section>
 </section>
 
@@ -635,13 +1096,14 @@ Colorado is 20.8% above league average</code></pre>
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy
